@@ -42,12 +42,12 @@ void append(ArrayList * l, void * data){
 
 void push(ArrayList * l, void * data, int i){
 
-  if(capacity==size)
+  if(capacity==l->size)
   {
-    l->data=(*void)realloc(l->data,(sizeof(void)*capacity)*2);
+    l->data=realloc(l->data,(sizeof(void)*capacity)*2);
     l->capacity*=2;
   }
-  int aux;
+  void* aux;
   for(int j=i;j<l->size;j++)
     {
       aux=l->data[j];
