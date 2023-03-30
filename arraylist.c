@@ -21,7 +21,7 @@ ArrayList *createList(void) {
 
 void append(ArrayList * l, void * data){
 
-  l[l[0].size]->data=data;
+  l[l[0].size].data=data;
   l->size++;
 }
 
