@@ -38,3 +38,13 @@ Thu 30 Mar 2023 06:07:28 PM UTC:
  tests:  0|6
 total_score: 0/70
 c155366
+Thu 30 Mar 2023 06:08:04 PM UTC: 
+ arraylist.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:15: error: incompatible types when assigning to type ‘void **’ from type ‘ArrayList’ {aka ‘struct ArrayList’}
+   16 |   lista->data=*lista;
+      |               ^
+Compilation failed
+84494d0
