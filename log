@@ -165,3 +165,14 @@ Thu 30 Mar 2023 08:33:45 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9f36c93
+Thu 30 Mar 2023 08:35:48 PM UTC: 
+ arraylist.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:30:35: error: ‘capacity’ undeclared (first use in this function)
+   30 |       l->data=(void*)realloc(data,capacity*2);
+      |                                   ^~~~~~~~
+arraylist.c:30:35: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d6205c6
