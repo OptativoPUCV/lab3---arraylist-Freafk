@@ -48,3 +48,9 @@ arraylist.c:16:15: error: incompatible types when assigning to type â€˜void **â€
       |               ^
 Compilation failed
 84494d0
+Thu 30 Mar 2023 06:08:38 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+d3a158f
