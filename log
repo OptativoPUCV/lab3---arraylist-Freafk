@@ -12,3 +12,17 @@ arraylist.c:17:15: error: invalid type argument of unary ‘*’ (have ‘int’
       |               ^~~~~~~~~
 Compilation failed
 70205da
+Thu 30 Mar 2023 05:59:46 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:17:14: error: assignment to ‘void **’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   17 |   lista->data=array[0];
+      |              ^
+arraylist.c:17:20: error: ‘*array’ is used uninitialized [-Werror=uninitialized]
+   17 |   lista->data=array[0];
+      |               ~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+e10a2b1
