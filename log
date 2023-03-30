@@ -252,3 +252,38 @@ Thu 30 Mar 2023 10:24:22 PM UTC:
  tests:  3|4
 total_score: 20/70
 2fdad7b
+Thu 30 Mar 2023 10:35:01 PM UTC: 
+ arraylist.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:45:6: error: ‘capacity’ undeclared (first use in this function)
+   45 |   if(capacity==size)
+      |      ^~~~~~~~
+arraylist.c:45:6: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:45:16: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   45 |   if(capacity==size)
+      |                ^~~~
+      |                dysize
+arraylist.c:47:15: error: expected expression before ‘void’
+   47 |     l->data=(*void)realloc(l->data,(sizeof(void)*capacity)*2);
+      |               ^~~~
+arraylist.c:47:20: error: expected ‘;’ before ‘realloc’
+   47 |     l->data=(*void)realloc(l->data,(sizeof(void)*capacity)*2);
+      |                    ^~~~~~~
+      |                    ;
+arraylist.c:52:7: error: ‘aux’ undeclared (first use in this function)
+   52 |       aux=l->data[j];
+      |       ^~~
+arraylist.c:53:11: error: comparison between pointer and integer [-Werror]
+   53 |       if(j==data)
+      |           ^~
+arraylist.c:57:24: error: dereferencing ‘void *’ pointer [-Werror]
+   57 |       l->data[j+1]=data[j];
+      |                        ^
+arraylist.c:57:19: error: void value not ignored as it ought to be
+   57 |       l->data[j+1]=data[j];
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+09b320d
