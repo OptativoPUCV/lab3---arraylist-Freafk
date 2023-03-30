@@ -20,7 +20,14 @@ ArrayList *createList(void) {
 }
 
 void append(ArrayList * l, void * data){
-
+  if(l->size==0)
+  {
+    l->data[0]=data;
+  }
+  else{
+    l->data[l->size -1]=data;
+    
+  }
   
 }
 
