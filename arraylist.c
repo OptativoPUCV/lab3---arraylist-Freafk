@@ -29,7 +29,7 @@ void append(ArrayList * l, void * data){
     {
       void *temp=l->data;
       l->capacity *=2;
-      temp=realloc(temp,(l->capacity*sizeof(void)));
+      temp=(void*)realloc(temp,(l->capacity*sizeof(void)));
       l->data=temp;
     }
     l->data[l->size -1]=data;
