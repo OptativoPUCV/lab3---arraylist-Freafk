@@ -316,3 +316,32 @@ arraylist.c:50:7: error: variable ‘aux’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 4f2df3c
+Thu 30 Mar 2023 10:35:57 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:45:6: error: ‘capacity’ undeclared (first use in this function)
+   45 |   if(capacity==size)
+      |      ^~~~~~~~
+arraylist.c:45:6: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:45:16: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   45 |   if(capacity==size)
+      |                ^~~~
+      |                dysize
+arraylist.c:47:15: error: expected expression before ‘void’
+   47 |     l->data=(*void)realloc(l->data,(sizeof(void)*capacity)*2);
+      |               ^~~~
+arraylist.c:47:20: error: expected ‘;’ before ‘realloc’
+   47 |     l->data=(*void)realloc(l->data,(sizeof(void)*capacity)*2);
+      |                    ^~~~~~~
+      |                    ;
+arraylist.c:53:10: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   53 |       aux=l->data[j];
+      |          ^
+arraylist.c:50:7: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   50 |   int aux;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+af6860a
