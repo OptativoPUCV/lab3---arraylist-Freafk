@@ -100,3 +100,9 @@ arraylist.c:24:9: error: invalid type argument of ‘->’ (have ‘ArrayList’
       |         ^~
 Compilation failed
 c7e5602
+Thu 30 Mar 2023 06:16:11 PM UTC: 
+ arraylist.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+3d4a918
