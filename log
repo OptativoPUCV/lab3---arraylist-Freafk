@@ -106,3 +106,13 @@ Thu 30 Mar 2023 06:16:11 PM UTC:
  tests:  1|5
 total_score: 10/70
 3d4a918
+Thu 30 Mar 2023 06:17:57 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:24:15: error: invalid type argument of ‘->’ (have ‘ArrayList’ {aka ‘struct ArrayList’})
+   24 |   l[l[0].size]->data=data;
+      |               ^~
+Compilation failed
+49bd48d
