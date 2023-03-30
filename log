@@ -386,3 +386,9 @@ arraylist.c:50:9: error: variable ‘aux’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 45865da
+Thu 30 Mar 2023 10:39:49 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 20/70
+2000f91
