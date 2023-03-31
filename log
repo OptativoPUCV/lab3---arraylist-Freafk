@@ -454,3 +454,15 @@ Fri 31 Mar 2023 12:44:20 AM UTC:
  tests:  3|4
 total_score: 20/70
 a543104
+Fri 31 Mar 2023 12:47:31 AM UTC: 
+ arraylist.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:55:10: error: ‘ji’ undeclared (first use in this function); did you mean ‘j’?
+   55 |       if(ji)break;
+      |          ^~
+      |          j
+arraylist.c:55:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+133e162
