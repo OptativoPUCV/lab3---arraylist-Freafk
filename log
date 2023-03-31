@@ -508,3 +508,34 @@ Fri 31 Mar 2023 12:56:57 AM UTC:
  tests:  8|2
 total_score: 40/70
 30628aa
+Fri 31 Mar 2023 01:01:19 AM UTC: 
+ arraylist.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:72:11: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   72 |     int k=l->data[aux];
+      |           ^
+arraylist.c:73:19: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   73 |     for(int j=i;j<size;j++)
+      |                   ^~~~
+      |                   dysize
+arraylist.c:73:19: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:77:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   77 |     return k;
+      |            ^
+arraylist.c:79:9: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   79 |   int k=l->data[i];
+      |         ^
+arraylist.c:87:1: error: expected expression before ‘}’ token
+   87 | }
+      | ^
+arraylist.c:79:7: error: unused variable ‘k’ [-Werror=unused-variable]
+   79 |   int k=l->data[i];
+      |       ^
+arraylist.c:87:1: error: control reaches end of non-void function [-Werror=return-type]
+   87 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+aa7a916
