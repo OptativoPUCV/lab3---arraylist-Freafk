@@ -539,3 +539,15 @@ arraylist.c:87:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 aa7a916
+Fri 31 Mar 2023 01:01:40 AM UTC: 
+ arraylist.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:73:19: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   73 |     for(int j=i;j<size;j++)
+      |                   ^~~~
+      |                   dysize
+arraylist.c:73:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+698346f
