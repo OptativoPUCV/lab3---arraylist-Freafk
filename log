@@ -466,3 +466,9 @@ arraylist.c:55:10: error: ‘ji’ undeclared (first use in this function); did 
 arraylist.c:55:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 133e162
+Fri 31 Mar 2023 12:48:11 AM UTC: 
+ arraylist.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  3|4
+total_score: 20/70
+50af8ac
