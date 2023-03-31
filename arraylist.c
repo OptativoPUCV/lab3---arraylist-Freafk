@@ -70,17 +70,19 @@ void* pop(ArrayList * l, int i){
   {
     int aux= l->size + i;
     void* k=l->data[aux];
-    for(int j=i;j<size;j++)
+    for(int j=i;j<l->size;j++)
       {
         l->data[j]=l->data[j+1];
       }
+    l->size--;
     return k;
   }
   void* k=l->data[i];
-  for(int j=i;j<size;j++)
+  for(int j=i;j<l->size;j++)
     {
       l->data[j]=l->data[j+1];
     }
+  l->size--;
   return k;
   
     
